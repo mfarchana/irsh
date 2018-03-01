@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  //Initialize animation on scroll with global settings
   AOS.init({
 
     duration: 800,
@@ -6,6 +8,7 @@ $(document).ready(function() {
     disable: 'mobile'
   });
 
+  //smoothing the scrollspy
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -28,13 +31,13 @@ $(document).ready(function() {
     } // End if
   });
 
-
+  //typed.js function
   setTimeout(function() {
     $('body').addClass('loaded');
 
 
     var options = {
-      strings: ["Hello World;"],
+      strings: [" This will change in future...."],
       typeSpeed: 120,
       startDelay: 500,
       backDelay: 1000,
@@ -50,7 +53,7 @@ $(document).ready(function() {
     }
 
     var second = {
-      strings: ["I'm Irshad. ^1000", "A Developer. ^1000", "A Dreamer. ^1000", "A Programmer.", "I'm Irshad."],
+      strings: ["I'm Irshad. ^1000", "A Developer. ^1000", "A Programmer.", "I'm Irshad."],
       typeSpeed: 120,
       startDelay: 500,
       backDelay: 200,
@@ -66,8 +69,8 @@ $(document).ready(function() {
 
     var third = {
       strings: ["Interactive front-end developer currently based in India. Focussed on creative Website designs."],
-      typeSpeed: 10,
-      backSpeed: 0,
+      typeSpeed: 50,
+      backSpeed: 50,
       backDelay: 500,
       startDelay: 500,
       smartBackspace: false,
@@ -80,12 +83,14 @@ $(document).ready(function() {
   }, 500);
 
 
+  //mobile navbar icon toggle
   $(".navbar-toggler").on("click", function(e) {
     e.preventDefault();
     $("button svg").toggleClass("fa-bars");
     $("button svg").toggleClass("fa-times");
   });
 
+  //handeling horizontal scrollbars due to AOS
   $("[data-parent='#accordion']").on("click", function(e) {
     e.preventDefault();
 
@@ -98,21 +103,16 @@ $(document).ready(function() {
     });
   });
 
-
-
 });
 
-
-
-let emoji = ["😂🔫", "☕", "💻", "✋📱"];
+//footer scroll
+let emoji = ["☕", "💻", "✋", "📱"];
 let i = 0;
 setInterval(function() {
   $("#madeWith").hide().html(emoji[i]).fadeIn(500);
 
-
-  if (i === 3) {
+  if (i === 4) {
     i = -1;
-
   }
   i++;
 
