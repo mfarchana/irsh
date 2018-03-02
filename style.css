@@ -166,8 +166,6 @@ body main {
   width: 150px;
 }
 
-
-
 .list-group-item.disabled {
   background-color: transparent !important;
 }

@@ -37,7 +37,7 @@ $(document).ready(function() {
 
 
     var options = {
-      strings: [" This will change in future...."],
+      strings: [" Hello World...."],
       typeSpeed: 120,
       startDelay: 500,
       backDelay: 1000,
@@ -103,6 +103,9 @@ $(document).ready(function() {
     });
   });
 
+});
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip()
 });
 
 //footer scroll
