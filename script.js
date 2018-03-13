@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
   //Initialize animation on scroll with global settings
   AOS.init({
 
@@ -32,55 +33,55 @@ $(document).ready(function() {
   });
 
   //typed.js function
-  setTimeout(function() {
-    $('body').addClass('loaded');
-
-
-    var options = {
-      strings: [" Hello World...."],
-      typeSpeed: 120,
-      startDelay: 500,
-      backDelay: 1000,
-      backSpeed: 200,
-      smartBackspace: true,
-      showCursor: false,
-      cursorChar: '|',
-      // fadeOutClass: 'typed-fade-out'
-      onComplete: (self) => {
-        var typed2 = new Typed("#txt2", second)
-        $(".navbar").fadeIn(1000).css("display", "flex")
-      }
-    }
-
-    var second = {
-      strings: ["I'm Irshad. ^1000", "A Developer. ^1000", "A Programmer.", "I'm Irshad."],
-      typeSpeed: 120,
-      startDelay: 500,
-      backDelay: 200,
-      backSpeed: 200,
-      smartBackspace: true,
-      showCursor: true,
-      cursorChar: '|',
-      onComplete: (self) => {
-        var typed3 = new Typed("#txt3", third)
-
-      }
-    }
-
-    var third = {
-      strings: ["Interactive front-end developer currently based in India. Focussed on creative Website designs."],
-      typeSpeed: 50,
-      backSpeed: 50,
-      backDelay: 500,
-      startDelay: 500,
-      smartBackspace: false,
-      showCursor: false,
-      cursorChar: '|',
-
-    }
-
-    var typed = new Typed("#txt1", options);
-  }, 500);
+  // setTimeout(function() {
+  //   $('body').addClass('loaded');
+  //
+  //
+  //   var options = {
+  //     strings: [" Hello World...."],
+  //     typeSpeed: 120,
+  //     startDelay: 500,
+  //     backDelay: 1000,
+  //     backSpeed: 200,
+  //     smartBackspace: true,
+  //     showCursor: false,
+  //     cursorChar: '|',
+  //     // fadeOutClass: 'typed-fade-out'
+  //     onComplete: (self) => {
+  //       var typed2 = new Typed("#txt2", second)
+  //       $(".navbar").fadeIn(1000).css("display", "flex")
+  //     }
+  //   }
+  //
+  //   var second = {
+  //     strings: ["I'm Irshad. ^1000", "A Developer. ^1000", "A Programmer.", "I'm Irshad."],
+  //     typeSpeed: 120,
+  //     startDelay: 500,
+  //     backDelay: 200,
+  //     backSpeed: 200,
+  //     smartBackspace: true,
+  //     showCursor: true,
+  //     cursorChar: '|',
+  //     onComplete: (self) => {
+  //       var typed3 = new Typed("#txt3", third)
+  //
+  //     }
+  //   }
+  //
+  //   var third = {
+  //     strings: ["Interactive front-end developer currently based in India. Focussed on creative Website designs."],
+  //     typeSpeed: 50,
+  //     backSpeed: 50,
+  //     backDelay: 500,
+  //     startDelay: 500,
+  //     smartBackspace: false,
+  //     showCursor: false,
+  //     cursorChar: '|',
+  //
+  //   }
+  //
+  //   var typed = new Typed("#txt1", options);
+  // }, 500);
 
 
   //mobile navbar icon toggle

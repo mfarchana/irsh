@@ -22,7 +22,7 @@ header {
 }
 
 header nav.navbar {
-  display: none;
+
   color: #fff;
   background-color: #000;
 }
@@ -37,6 +37,7 @@ header .active {
   text-align: center;
   border-bottom: 3px solid #009688;
 }
+
 
 header .intro {
   color: #009688;
