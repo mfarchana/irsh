@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     duration: 800,
     easing: 'ease-in-sine',
-    disable: 'mobile'
+    // disable: 'mobile'
   });
 
   //smoothing the scrollspy
